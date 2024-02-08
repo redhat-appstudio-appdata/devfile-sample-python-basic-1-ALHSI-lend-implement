@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-atsx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/apoczeka-tenant/devfile-sample-python-basic-1/devfile-sample-python-basic-atsx@sha256:6ee6a6161f1f2e35eac863b780bde8aefff30288ad39915440025054516fc224
+        name: my-python
+        resources: {}
+status: {}
